@@ -73,6 +73,7 @@ a {
   width: 33px;
 }
 .main-nav__toggle {
+  position: relative;
   width: 36px;
   height: 25px;
   background-color: transparent;
@@ -82,8 +83,8 @@ a {
 .main-nav__toggle--closed::before {
   content: "";
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 5px;
+  right: 0px;
   width: 36px;
   height: 2px;
   background-color: #222222;

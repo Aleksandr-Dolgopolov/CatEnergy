@@ -1,3 +1,5 @@
+// out: false
+
 @import "variables.less";
 
 .page-header--preview::after {
@@ -18,7 +20,7 @@
     flex-direction: column;
 }
 
-.container { 
+.container {
     width: 280px;
     margin: 0 auto;
 }
@@ -36,47 +38,49 @@
 }
 
 .main-nav__toggle {
-  width: 36px;
-  height: 25px;
+    position: relative;
 
-  //background-color: #6a4d38;
-  background-color: transparent;
+    width: 36px;
+    height: 25px;
 
-  cursor: pointer;
-  border: none;
+    //background-color: #6a4d38;
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
 }
 
 .main-nav__toggle--closed::before {
-  content: "";
+    content: "";
 
-  position: absolute;
-  top: 22px;
-  right: 20px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
 
-  width: 36px;
-  height: 2px;
+    width: 36px;
+    height: 2px;
 
-  background-color: #222222;
-  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+    background-color: #222222;
+    box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }
 
 .main-nav__toggle--opened::after {
-  content: "";
-  position: absolute;
-  top: 24px;
-  left: 18px;
-  width: 36px;
-  height: 2px;
-  background-color: #000000;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #000000;
 }
 
- .main-nav--closed {
-   display: none;
- }
+.main-nav--closed {
+    display: none;
+}
 
- .main-nav--nojs {
-   display: block;
- }
+.main-nav--nojs {
+    display: block;
+}
 
 @media (min-width: @tablet-width) {
 
@@ -96,7 +100,7 @@
         padding: 0;
     }
 
-    .page-header__logo-link{
+    .page-header__logo-link {
         display: block;
         width: 192px;
     }
@@ -110,7 +114,7 @@
     }
 
     .main-nav__toggle {
-      display: none;
+        display: none;
     }
 }
 
@@ -122,7 +126,8 @@
         justify-content: space-between;
     }
 
-    .page-header--preview::after {display: block;
+    .page-header--preview::after {
+        display: block;
         width: 50%;
         min-height: 696px;
         top: 0;
@@ -133,7 +138,6 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        
+
     }
 }
-
